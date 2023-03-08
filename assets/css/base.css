@@ -1,0 +1,22 @@
+:root {
+    --cor-fundo: #222;
+    --cor-fundo-light: #e5e5e5;
+    --fonte-base: 'Poppins', sans-serif;
+    --fonte-destaque: 'Quicksand', sans-serif;
+    --texto-dark: #111;
+    --texto-light: #fdfdfd;
+    --sombra-hover: #2196f3;
+}
+
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
+ 

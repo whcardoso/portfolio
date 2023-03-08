@@ -1,0 +1,20 @@
+.sobre {
+    display: flex;
+    flex-direction: column;
+    background: var(--cor-fundo-light);
+    color: var(--texto-dark);
+    justify-content: center;
+    padding-block: 4rem;
+}
+
+.sobre__titulo {
+    font-family: var(--fonte-destaque);
+}
+
+.sobre__descricao {
+    font-family: var(--fonte-base);
+}
+
+.sobre__descricao p {
+    margin: 1rem 0;
+}

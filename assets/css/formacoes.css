@@ -1,0 +1,81 @@
+.formacoes {
+    align-items: center;
+    background: var(--cor-fundo-light);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-block: 4rem;
+}
+
+.formacoes__titulo {
+    align-self: center;
+    color: var(--texto-dark);
+    font-family: var(--fonte-destaque);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.formacao {
+    align-self: stretch;
+    background: var(--cor-fundo);
+    border: var(--cor-fundo-dark) 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: var(--texto-light);
+    line-height: 2.5rem;
+    padding: 2rem 1.5rem;
+}
+
+.formacao:hover {
+    box-shadow: 1px 1px 10px #2196f3;
+    transition: .5s ease;
+}
+
+.formacao__imagem {
+    border-radius: 10px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.formacao__imagem--faculdade {
+    background-image: url(../img/logo-unopar.png);
+}
+
+.formacao__imagem--one {
+    background-image: url(../img/logo-one.png);
+}
+
+.formacao__titulo, .formacao__subtitulo {
+    font-family: var(--fonte-base);
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+@media screen and (min-width: 0px){
+    .formacoes {
+        flex-direction: column;
+    }
+
+    .formacao {
+        align-self: center;
+        width: calc(90% - 0.5rem);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .formacoes {
+        flex-direction: row;
+    }
+
+    .formacao {
+        width: calc(50% - 1rem);
+    }
+}
