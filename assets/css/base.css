@@ -1,6 +1,7 @@
 :root {
     --cor-fundo: #222;
     --cor-fundo-light: #e5e5e5;
+    --cor-erro: #EF0024;
     --fonte-base: 'Poppins', sans-serif;
     --fonte-destaque: 'Quicksand', sans-serif;
     --texto-dark: #111;

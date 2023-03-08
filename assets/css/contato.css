@@ -40,17 +40,23 @@
 .contato__form {
     align-self: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80vw;
+}
+
+.contato__input__field {
+    display: flex;
+    flex-direction: column;
 }
 
 .contato__input, .contato__textarea {
+    box-sizing: border-box;
+    border: var(--cor-fundo-light) 1px solid;
     font-family: var(--fonte-base);
     margin: 1rem 0;
     padding: 1.5rem;
-    width: 80%;
-    transition: all .25s;
-    border: var(--cor-fundo-light) 1px solid;
+    width: 100%;
     outline: none;
+    transition: all .25s;
 }
 
 .contato__input:hover, .contato__textarea:hover {
@@ -59,6 +65,14 @@
 
 .contato__input:focus-visible, .contato__textarea:focus-visible {
     border: var(--sombra-hover) 1px solid;
+}
+
+.contato__input__field--erro {
+    font-family: var(--fonte-base);
+    font-size: 0.8rem;
+    color: var(--cor-erro);
+    font-weight: 400;
+    padding-block: 0.3rem 0.5rem;
 }
 
 .contato__botao {
@@ -71,6 +85,11 @@
     transition: .5s ease;
     text-decoration: none;
     width: 50%;
+}
+
+.contato__botao:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .contato__botao--enviar {
