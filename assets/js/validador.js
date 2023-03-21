@@ -1,12 +1,13 @@
 export default function valida(input) {
-    const inputType = input.dataset.type;
+    const tipoDeInput = input.dataset.tipo;
+
     if (input.validity.valid) {
       input.parentElement.classList.remove('contato__input__field--invalid');
       input.parentElement.querySelector('.contato__input__field--erro').innerHTML = '';
       checkFormValidity();
     } else {
       input.parentElement.classList.add('contato__input__field--invalid');
-      input.parentElement.querySelector('.contato__input__field--erro').innerHTML = showErrorMessage(inputType, input);
+      input.parentElement.querySelector('.contato__input__field--erro').innerHTML = showErrorMessage(tipoDeInput, input);
       checkFormValidity();
     }
   }
@@ -31,18 +32,18 @@ export default function valida(input) {
     }
   }
   
-  function showErrorMessage(inputType, input) {
+  function showErrorMessage(tipoDeInput, input) {
     let message;
-    if (errorMessages.hasOwnProperty(inputType)) {
-      Object.keys(errorMessages[inputType]).forEach(error => {
-        if(input.validity[error]) message = errorMessages[inputType][error];
+    if (errorMessages.hasOwnProperty(tipoDeInput)) {
+      Object.keys(errorMessages[tipoDeInput]).forEach(error => {
+        if(input.validity[error]) message = errorMessages[tipoDeInput][error];
       })
     }
     return message;
   }
   
   function checkFormValidity() {
-    const submitButton = document.querySelector('[data-type="submit"]');
+    const submitButton = document.querySelector('[data-tipo="submit"]');
     const validForm = document.querySelector('.contato__form').checkValidity();
     if(validForm) submitButton.removeAttribute('disabled');
     else submitButton.setAttribute('disabled', true);

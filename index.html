@@ -196,6 +196,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="projeto">
+                    <img class="projeto__imagem" src="./assets/img/lista-de-tarefas.jpg">
+                    <div class="projeto__info">
+                        <p class="projeto__titulo">Lista de tarefas</p>
+                        <p class="projeto__linguagens">HTML, CSS e JavaScript</p>
+                        <p class="projeto__descricao">Projeto desenvolvido com o objetivo de manipular o DOM com JavaScript.</p>
+                        <div class="projeto__botoes">
+                            <a href="https://github.com/whcardoso/lista-de-tarefas-ceep" class="projeto__botoes__botao projeto__botoes__botao--repo">Repositório</a>
+                            <a href="https://whcardoso.github.io/lista-de-tarefas-ceep/" class="projeto__botoes__botao projeto__botoes__botao--demo" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img class="projeto__imagem" src="./assets/img/arq-rose-costa.png">
+                    <div class="projeto__info">
+                        <p class="projeto__titulo">Arquiteta Rose Costa</p>
+                        <p class="projeto__linguagens">HTML, CSS e JavaScript</p>
+                        <p class="projeto__descricao">Site desenvolvido para exibição de serviços da arquiteta Rose Costa.</p>
+                        <div class="projeto__botoes">
+                            <a href="#" class="projeto__botoes__botao projeto__botoes__botao--repo">Repositório</a>
+                            <a href="https://www.arqrosecosta.com/" class="projeto__botoes__botao projeto__botoes__botao--demo" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="contato container" id="contato">
                 <h2 class="contato__titulo">Contato</h2>
@@ -204,25 +228,25 @@
                 <div class="contato__content">
                     <form class="contato__form">
                         <fieldset class="contato__form__fieldset">
-                            <div class="contato__input__field contato__input__field--invalid">
-                                <input class="contato__input" type="text" id="nome" placeholder="Nome" minlength="3" maxlength="50" data-type="name" required>
+                            <div class="contato__input__field">
+                                <input class="contato__input" type="text" id="nome" placeholder="Nome" minlength="3" maxlength="50" data-tipo="name" required>
                                 <span class="contato__input__field--erro"></span>
                             </div>            
                             <div class="contato__input__field">
-                                <input class="contato__input" type="email" id="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-type="email" required>
+                                <input class="contato__input" type="email" id="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-tipo="email" required>
                                 <span class="contato__input__field--erro"></span>
                             </div>
                             <div class="contato__input__field">
-                                <input class="contato__input" type="text" id="assunto" placeholder="Assunto" minlength="3" maxlength="50" data-type="subject" required>
+                                <input class="contato__input" type="text" id="assunto" placeholder="Assunto" minlength="3" maxlength="50" data-tipo="subject" required>
                                 <span class="contato__input__field--erro"></span> 
                             </div>
                             <div class="contato__input__field">
-                                <textarea class="contato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" minlength="5" maxlength="300" data-type="message" required></textarea>
+                                <textarea class="contato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" minlength="5" maxlength="300" data-tipo="message" required></textarea>
                                 <span class="contato__input__field--erro"></span>
                             </div>
                             <span class="form__field__error-message"></span>
                         </fieldset>
-                        <button disabled class="contato__botao contato__botao--enviar" data-type="submit">Enviar mensagem</button>
+                        <button disabled class="contato__botao contato__botao--enviar" data-tipo="submit">Enviar mensagem</button>
                 </form>
             </section>
         </main>

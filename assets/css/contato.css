@@ -48,6 +48,10 @@
     flex-direction: column;
 }
 
+.contato__input__field--invalid .contato__input {
+    border: var(--cor-erro) 1px solid;
+}
+
 .contato__input, .contato__textarea {
     box-sizing: border-box;
     border: var(--cor-fundo-light) 1px solid;
@@ -68,6 +72,7 @@
 }
 
 .contato__input__field--erro {
+    align-self: flex-start;
     font-family: var(--fonte-base);
     font-size: 0.8rem;
     color: var(--cor-erro);
